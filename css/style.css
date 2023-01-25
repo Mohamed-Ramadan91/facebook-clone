@@ -1,0 +1,253 @@
+/*======================  Global Rules  ======================*/
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+/*======================  Variables  ======================*/
+
+/*======================  Resposive Container  ======================*/
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*======================  sign (in & up) Page  ======================*/
+.log-in {
+  background-color: #f0f2f5;
+  padding-bottom: 20rem;
+}
+.log-in .container {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}
+.log-in .container .left-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10rem;
+}
+.log-in .container .left-part .logo {
+  width: 30rem;
+}
+.log-in .container .left-part .logo img {
+  margin-left: -30px;
+}
+.log-in .container .left-part p {
+  font-size: 2.5rem;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
+.log-in .container .right-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.log-in .container .right-part form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-top: 15rem;
+  width: 350px;
+  margin-right: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.right-part form div {
+  width: 100%;
+}
+.right-part form div input {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.right-part form div input[type="text"],
+.right-part form div input[type="password"] {
+  border: 1px solid #dddfe2;
+  outline-color: hsl(214, 82%, 70%);
+}
+.right-part form div input[type="text"]::placeholder,
+.right-part form div input[type="password"]::placeholder {
+  color: rgb(156, 156, 156);
+}
+.right-part form div input[type="submit"] {
+  background-color: hsl(214, 82%, 55%);
+  border: none;
+  color: #fff;
+}
+.right-part form div input[type="submit"]:hover {
+  background-color: hsl(214, 82%, 48%);
+}
+.right-part form .btn {
+  width: fit-content;
+  text-align: center;
+}
+.right-part form hr {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+.right-part form button {
+  background-color: hsl(110, 67%, 42%);
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.right-part form button:hover {
+  background-color: hsl(110, 67%, 38%);
+}
+.right-part form .fg-pass {
+  display: flex;
+  justify-content: center;
+}
+.right-part form .fg-pass a {
+  font-size: 1.6rem;
+  color: #3c83f2;
+}
+.right-part form .fg-pass a:hover {
+  text-decoration: underline;
+}
+.right-part p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.right-part p a {
+  font-weight: bold;
+  color: #000;
+}
+.right-part p a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+footer a {
+  font-size: 1.3rem;
+  color: rgb(156, 156, 156);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+footer .more-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+footer .copy-right {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+  .log-in .container {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .log-in .container .left-part {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+    margin-top: 5rem;
+  }
+  .log-in .container .right-part {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .log-in .container .right-part form {
+    margin: auto;
+    max-width: 400px;
+    width: 95%;
+  }
+  .log-in .container .left-part p {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+  }
+  .log-in .container .left-part .logo img {
+    margin-left: 0;
+  }
+  .log-in {
+    padding-bottom: 7rem;
+  }
+}
