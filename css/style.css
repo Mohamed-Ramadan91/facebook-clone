@@ -205,7 +205,114 @@ footer .copy-right {
   margin: 2rem 0;
   font-size: 1.3rem;
 }
+/* Contact Me Section */
+.creator {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.creator span {
+  font-weight: bold;
+  color: #1a54b1;
+  cursor: pointer;
+}
+.creator .ri-arrow-right-circle-fill,
+.creator .ri-arrow-left-circle-fill {
+  color: rgb(26, 84, 177);
+  animation: myAnim 3s ease 0s infinite normal forwards;
+  -webkit-animation: myAnim 3s ease 0s infinite normal forwards;
+}
+@keyframes myAnim {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
 
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.creator .contact-me {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 16, 36, 0.7);
+}
+.creator .contact-me.show {
+  display: block;
+}
+.creator .contact-me .card {
+  width: 70vw;
+  max-width: 500px;
+  background-color: #fff;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact-me .card .ri-close-fill {
+  align-self: end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.creator .contact-me .card p {
+  text-align: center;
+  padding: 1rem;
+}
+.creator .contact-me .icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.creator .contact-me i {
+  margin-top: 0.5rem;
+  color: #7d7d7d;
+  font-size: 3rem;
+}
+.creator .contact-me a:hover {
+  text-decoration: none;
+}
+
+.contact-me .ri-facebook-circle-fill:hover {
+  color: #3b5998;
+}
+.contact-me .ri-linkedin-box-fill:hover {
+  color: #0077b5;
+}
+.contact-me .ri-github-fill:hover {
+  color: #1a1e22;
+}
+.contact-me .ri-whatsapp-fill:hover {
+  color: #32d85a;
+}
+.contact-me .ri-mail-fill:hover {
+  color: #d64137;
+}
+/* Responsive Design */
 @media (max-width: 800px) {
   .log-in .container {
     padding-left: 0;
